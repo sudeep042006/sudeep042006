@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 550 500" width="550" height="500">
+  <defs>
+    <style>
+      .card-bg {
+        fill: #0d1117;
+        stroke: #21262d;
+        stroke-width: 1.5;
+        rx: 8px;
+      }
+
+      /* Bulletproof Fade-in Animation */
+      .anim-element {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+        opacity: 0;
+        animation: fadeIn 0.4s ease-out forwards;
+      }
+
+      /* Absolute sequential delays */
+      .el-name { font-size: 22px; font-weight: 700; fill: #ffffff; animation-delay: 0.2s; }
+      
+      .el-badge-1 { animation-delay: 0.5s; }
+      .el-badge-2 { animation-delay: 0.6s; }
+      .el-badge-3 { animation-delay: 0.7s; }
+      
+      .el-quote { animation-delay: 0.9s; }
+      
+      .el-phil-head { font-size: 13.5px; font-weight: 700; fill: #ffffff; animation-delay: 1.1s; }
+      .el-phil-body { font-size: 11px; fill: #c9d1d9; animation-delay: 1.3s; }
+      
+      .el-edu-head { font-size: 13.5px; font-weight: 700; fill: #ffffff; animation-delay: 1.6s; }
+      .el-edu-body { font-size: 11px; fill: #c9d1d9; animation-delay: 1.8s; }
+      
+      .el-focus-head { font-size: 13.5px; font-weight: 700; fill: #ffffff; animation-delay: 2.1s; }
+      
+      .table-box { stroke: #21262d; stroke-width: 1.2; fill: none; opacity: 0; animation: fadeIn 0.4s ease-in-out 2.3s forwards; }
+      .table-lines { stroke: #21262d; stroke-width: 1.0; }
+      .table-header { font-size: 11px; font-weight: 700; fill: #8b949e; }
+      
+      .row-1 { animation-delay: 2.5s; }
+      .row-2 { animation-delay: 2.8s; }
+      .row-3 { animation-delay: 3.1s; }
+      .row-4 { animation-delay: 3.4s; }
+
+      .el-ns { font-size: 11.5px; font-weight: 600; fill: #58a6ff; animation-delay: 3.7s; }
+
+      /* Details styling */
+      .badge-text { font-size: 9.5px; font-weight: 600; fill: #ffffff; text-anchor: middle; }
+      .quote-line { stroke: #58a6ff; stroke-width: 3.0; stroke-linecap: round; }
+      .quote-text { font-size: 11.5px; font-style: italic; fill: #8b949e; }
+      
+      /* Capsule status badges */
+      .capsule { fill: #21262d; stroke: #30363d; stroke-width: 1.0; rx: 10px; }
+      .capsule-text { font-size: 9.5px; font-weight: 600; fill: #c9d1d9; text-anchor: middle; }
+
+      @keyframes fadeIn {
+        to { opacity: 1; }
+      }
+    </style>
+  </defs>
+
+  <!-- Clean Canvas -->
+  <rect width="550" height="500" class="card-bg" />
+
+  <!-- 1. Name Title -->
+  <text x="25" y="40" class="anim-element el-name">Sudeep Kiran Kuralkar</text>
+
+  <!-- 2. Badges Row (Absolute Placement) -->
+  <!-- Badge 1: Software Engineer -->
+  <rect x="25" y="55" width="105" height="18" rx="3" fill="#6b3a1f" class="anim-element el-badge-1" />
+  <text x="77.5" y="67" class="badge-text anim-element el-badge-1">Software Engineer</text>
+
+  <!-- Badge 2: AI/ML Enthusiast -->
+  <rect x="135" y="55" width="100" height="18" rx="3" fill="#4a2912" class="anim-element el-badge-2" />
+  <text x="185" y="67" class="badge-text anim-element el-badge-2">AI/ML Enthusiast</text>
+
+  <!-- Badge 3: Android Dev -->
+  <rect x="240" y="55" width="75" height="18" rx="3" fill="#2e1a0d" class="anim-element el-badge-3" />
+  <text x="277.5" y="67" class="badge-text anim-element el-badge-3">Android Dev</text>
+
+  <!-- 3. Blockquote Section -->
+  <line x1="25" y1="88" x2="25" y2="106" class="quote-line anim-element el-quote" />
+  <text x="35" y="101" class="quote-text anim-element el-quote">"Always curious to learn something techy."</text>
+
+  <!-- 4. Philosophy Section -->
+  <text x="25" y="140" class="anim-element el-phil-head">⚙️ Philosophy</text>
+  <text x="25" y="158" class="anim-element el-phil-body">Discipline of Captain America  ·  Tech-mind of Iron Man  ·  Humility of Peter Parker</text>
+
+  <!-- 5. Education Section -->
+  <text x="25" y="192" class="anim-element el-edu-head">🎓 Education</text>
+  <text x="25" y="210" class="anim-element el-edu-body">B.Tech — CS &amp; Business Systems (Class of '28)  |  SVPCET, Nagpur  |  🏛️ Student Rep</text>
+
+  <!-- 6. Focus Heading -->
+  <text x="25" y="246" class="anim-element el-focus-head">🚀 Current Focus</text>
+
+  <!-- ==================== TABLE CONTAINER ==================== -->
+  <rect x="25" y="262" width="480" height="172" class="table-box" />
+
+  <!-- Static Table Lines -->
+  <g class="table-box">
+    <!-- Vertical Divider -->
+    <line x1="215" y1="262" x2="215" y2="434" class="table-lines" />
+    <!-- Header Divider -->
+    <line x1="25" y1="292" x2="505" y2="292" class="table-lines" />
+    <!-- Row Divider 1 -->
+    <line x1="25" y1="327" x2="505" y2="327" class="table-lines" />
+    <!-- Row Divider 2 -->
+    <line x1="25" y1="362" x2="505" y2="362" class="table-lines" />
+    <!-- Row Divider 3 -->
+    <line x1="25" y1="397" x2="505" y2="397" class="table-lines" />
+
+    <!-- Table Header Texts -->
+    <text x="40" y="280" class="table-header">Domain</text>
+    <text x="230" y="280" class="table-header">Status</text>
+  </g>
+
+  <!-- Animated Table Rows (Absolute Placement) -->
+  
+  <!-- Row 1: Java & DSA -->
+  <text x="40" y="314" font-size="11.5" font-weight="600" fill="#e2e8f0" class="anim-element row-1">☕ Java &amp; DSA</text>
+  <rect x="230" y="300" width="85" height="18" rx="9" class="capsule anim-element row-1" />
+  <text x="272.5" y="312" class="capsule-text anim-element row-1">Levelling Up</text>
+
+  <!-- Row 2: AI / ML -->
+  <text x="40" y="349" font-size="11.5" font-weight="600" fill="#e2e8f0" class="anim-element row-2">🤖 AI / ML</text>
+  <rect x="230" y="335" width="115" height="18" rx="9" class="capsule anim-element row-2" />
+  <text x="287.5" y="347" class="capsule-text anim-element row-2">Actively Exploring</text>
+
+  <!-- Row 3: Android Dev -->
+  <text x="40" y="384" font-size="11.5" font-weight="600" fill="#e2e8f0" class="anim-element row-3">📱 Android Dev</text>
+  <rect x="230" y="370" width="65" height="18" rx="9" class="capsule anim-element row-3" />
+  <text x="262.5" y="382" class="capsule-text anim-element row-3">Building</text>
+
+  <!-- Row 4: MERN Stack -->
+  <text x="40" y="419" font-size="11.5" font-weight="600" fill="#e2e8f0" class="anim-element row-4">🌐 MERN Stack</text>
+  <rect x="230" y="405" width="85" height="18" rx="9" class="capsule anim-element row-4" />
+  <text x="272.5" y="417" class="capsule-text anim-element row-4">Foundation ✔</text>
+  <!-- ==================== END TABLE CONTAINER ==================== -->
+
+  <!-- 7. GSoC 2027 Bottom Line -->
+  <text x="25" y="470" class="anim-element el-ns">🎯 North Star  →  Gearing up for GSoC 2027 🚀</text>
+</svg>
